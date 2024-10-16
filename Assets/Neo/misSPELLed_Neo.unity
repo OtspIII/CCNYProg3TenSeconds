@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 278363615}
   - component: {fileID: 278363618}
   - component: {fileID: 278363617}
-  - component: {fileID: 278363616}
   m_Layer: 5
   m_Name: prompt (1)
   m_TagString: Untagged
@@ -160,20 +159,6 @@ RectTransform:
   m_AnchoredPosition: {x: -443.373, y: 0}
   m_SizeDelta: {x: 255.074, y: 305.009}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &278363616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278363614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423eb744eaa70a0499ced5ebaef1e8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entered: 
-  prompt: {fileID: 278363617}
 --- !u!114 &278363617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +405,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entered: 
   prompt: {fileID: 452521534}
+  prompt1: {fileID: 278363617}
+  prompt2: {fileID: 2036515780}
+  prompt3: {fileID: 905320699}
+  prompt4: {fileID: 1336609447}
+  prompt5: {fileID: 1869663633}
+  prompt6: {fileID: 1223726341}
+  prompt7: {fileID: 1183286280}
+  prompt8: {fileID: 1952186504}
+  prompt9: {fileID: 1253256227}
+  prompt10: {fileID: 1548785460}
+  word: []
 --- !u!1 &743467238
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +540,6 @@ GameObject:
   - component: {fileID: 905320697}
   - component: {fileID: 905320700}
   - component: {fileID: 905320699}
-  - component: {fileID: 905320698}
   m_Layer: 5
   m_Name: prompt (3)
   m_TagString: Untagged
@@ -571,20 +566,6 @@ RectTransform:
   m_AnchoredPosition: {x: -178.4, y: 0}
   m_SizeDelta: {x: 255.074, y: 305.009}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &905320698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905320696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423eb744eaa70a0499ced5ebaef1e8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entered: 
-  prompt: {fileID: 905320699}
 --- !u!114 &905320699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,7 +808,6 @@ GameObject:
   - component: {fileID: 1183286278}
   - component: {fileID: 1183286281}
   - component: {fileID: 1183286280}
-  - component: {fileID: 1183286279}
   m_Layer: 5
   m_Name: prompt (7)
   m_TagString: Untagged
@@ -854,20 +834,6 @@ RectTransform:
   m_AnchoredPosition: {x: 165.7, y: 0}
   m_SizeDelta: {x: 255.074, y: 305.009}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1183286279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183286277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423eb744eaa70a0499ced5ebaef1e8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entered: 
-  prompt: {fileID: 1183286280}
 --- !u!114 &1183286280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,7 +942,6 @@ GameObject:
   - component: {fileID: 1223726339}
   - component: {fileID: 1223726342}
   - component: {fileID: 1223726341}
-  - component: {fileID: 1223726340}
   m_Layer: 5
   m_Name: prompt (6)
   m_TagString: Untagged
@@ -1003,20 +968,6 @@ RectTransform:
   m_AnchoredPosition: {x: 73.3, y: 0}
   m_SizeDelta: {x: 255.074, y: 305.009}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1223726340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223726338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423eb744eaa70a0499ced5ebaef1e8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entered: 
-  prompt: {fileID: 1223726341}
 --- !u!114 &1223726341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,7 +1076,6 @@ GameObject:
   - component: {fileID: 1253256225}
   - component: {fileID: 1253256228}
   - component: {fileID: 1253256227}
-  - component: {fileID: 1253256226}
   m_Layer: 5
   m_Name: prompt (9)
   m_TagString: Untagged
@@ -1152,20 +1102,6 @@ RectTransform:
   m_AnchoredPosition: {x: 391.1, y: 0}
   m_SizeDelta: {x: 255.074, y: 305.009}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1253256226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253256224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423eb744eaa70a0499ced5ebaef1e8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entered: 
-  prompt: {fileID: 1253256227}
 --- !u!114 &1253256227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1366,7 +1302,6 @@ GameObject:
   - component: {fileID: 1336609445}
   - component: {fileID: 1336609448}
   - component: {fileID: 1336609447}
-  - component: {fileID: 1336609446}
   m_Layer: 5
   m_Name: prompt (4)
   m_TagString: Untagged
@@ -1393,20 +1328,6 @@ RectTransform:
   m_AnchoredPosition: {x: -85.6, y: 0}
   m_SizeDelta: {x: 255.074, y: 305.009}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1336609446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336609444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423eb744eaa70a0499ced5ebaef1e8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entered: 
-  prompt: {fileID: 1336609447}
 --- !u!114 &1336609447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1515,7 +1436,6 @@ GameObject:
   - component: {fileID: 1548785458}
   - component: {fileID: 1548785461}
   - component: {fileID: 1548785460}
-  - component: {fileID: 1548785459}
   m_Layer: 5
   m_Name: prompt (10)
   m_TagString: Untagged
@@ -1542,20 +1462,6 @@ RectTransform:
   m_AnchoredPosition: {x: 483.6, y: 0}
   m_SizeDelta: {x: 255.074, y: 305.009}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1548785459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548785457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423eb744eaa70a0499ced5ebaef1e8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entered: 
-  prompt: {fileID: 1548785460}
 --- !u!114 &1548785460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1664,7 +1570,6 @@ GameObject:
   - component: {fileID: 1869663631}
   - component: {fileID: 1869663634}
   - component: {fileID: 1869663633}
-  - component: {fileID: 1869663632}
   m_Layer: 5
   m_Name: prompt (5)
   m_TagString: Untagged
@@ -1691,20 +1596,6 @@ RectTransform:
   m_AnchoredPosition: {x: -26.3, y: 0}
   m_SizeDelta: {x: 255.074, y: 305.009}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1869663632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869663630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423eb744eaa70a0499ced5ebaef1e8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entered: 
-  prompt: {fileID: 1869663633}
 --- !u!114 &1869663633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1813,7 +1704,6 @@ GameObject:
   - component: {fileID: 1952186502}
   - component: {fileID: 1952186505}
   - component: {fileID: 1952186504}
-  - component: {fileID: 1952186503}
   m_Layer: 5
   m_Name: prompt (8)
   m_TagString: Untagged
@@ -1840,20 +1730,6 @@ RectTransform:
   m_AnchoredPosition: {x: 258.2, y: 0}
   m_SizeDelta: {x: 255.074, y: 305.009}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1952186503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952186501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423eb744eaa70a0499ced5ebaef1e8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entered: 
-  prompt: {fileID: 1952186504}
 --- !u!114 &1952186504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1962,7 +1838,6 @@ GameObject:
   - component: {fileID: 2036515778}
   - component: {fileID: 2036515781}
   - component: {fileID: 2036515780}
-  - component: {fileID: 2036515779}
   m_Layer: 5
   m_Name: prompt (2)
   m_TagString: Untagged
@@ -1989,20 +1864,6 @@ RectTransform:
   m_AnchoredPosition: {x: -310.8, y: 0}
   m_SizeDelta: {x: 255.074, y: 305.009}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2036515779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036515777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423eb744eaa70a0499ced5ebaef1e8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entered: 
-  prompt: {fileID: 2036515780}
 --- !u!114 &2036515780
 MonoBehaviour:
   m_ObjectHideFlags: 0
