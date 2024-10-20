@@ -10,14 +10,13 @@ public class timer_Neo : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine(MySexyCoroutine());
+        //StartCoroutine(MySexyCoroutine());
     }
 
     // Update is called once per frame
     void Update()
     {
         MySexyCoroutine();
-        Debug.Log("yip1");
     }
 
     public IEnumerator MySexyCoroutine()
@@ -26,7 +25,6 @@ public class timer_Neo : MonoBehaviour
         //yield return new WaitForSeconds(1);
         while (timer < 1)
         {
-            Debug.Log("yip");
             timer += Time.deltaTime / 10f;
 
             timerObj.transform.localScale = new Vector2(Mathf.Lerp(38.38f, 0, timer), 1);
