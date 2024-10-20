@@ -1545,7 +1545,7 @@ MonoBehaviour:
   - {fileID: 1169724675433156916, guid: e9e547f22784124429b5757321f467a1, type: 3}
   - {fileID: 2567301259856858782, guid: e007770e4603f814a843bc8f1c9f2968, type: 3}
   - {fileID: 6428900558883209536, guid: 700cc7aa35d631b44be8958947fc3565, type: 3}
-  spawnInterval: 0.4
+  spawnInterval: 0.3
 --- !u!1 &571488717
 GameObject:
   m_ObjectHideFlags: 0
