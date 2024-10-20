@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hazard
+  - Life
+  - Enemy
+  - Target
+  - HitObject
+  - DuckObject
+  - SpinObject
   layers:
   - Default
   - TransparentFX
@@ -12,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Target
   - 
   - 
   - 
