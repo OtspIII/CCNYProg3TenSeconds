@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hazard
+  - BlueWire
+  - YellowWire
+  - RedWire
   layers:
   - Default
   - TransparentFX
