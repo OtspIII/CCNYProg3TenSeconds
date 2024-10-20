@@ -20,13 +20,8 @@ public class joshua_GameManager : MonoBehaviour
     private float countdownTime = 10f;
     private bool timerActive = true;
 
-    private GameManager_Misha gameManager;
-
-
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager_Misha>();
-
         UpdateUI();
         StartCoroutine(Timer());
     }
@@ -126,8 +121,6 @@ public class joshua_GameManager : MonoBehaviour
         Time.timeScale = 0; 
         yield return new WaitForSecondsRealtime(pauseDuration); 
         Time.timeScale = 1; 
-
-        StartCoroutine(gameManager.CoroutineCountdown());
     }
 }
 
