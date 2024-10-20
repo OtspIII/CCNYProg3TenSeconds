@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class joshua_GameManager : MonoBehaviour
 {
@@ -121,6 +122,8 @@ public class joshua_GameManager : MonoBehaviour
         Time.timeScale = 0; 
         yield return new WaitForSecondsRealtime(pauseDuration); 
         Time.timeScale = 1; 
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 
