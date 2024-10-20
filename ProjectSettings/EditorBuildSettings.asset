@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Misha/GameOver.unity
     guid: 32c8982a2d2b07d40868dd888887cc43
+  - enabled: 1
+    path: Assets/Michael R/Level 1.unity
+    guid: b8f941d10c4093749be3167977de64e0
   m_configObjects: {}
