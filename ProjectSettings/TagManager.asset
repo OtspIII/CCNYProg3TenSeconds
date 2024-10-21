@@ -8,11 +8,14 @@ TagManager:
   - BlueWire
   - YellowWire
   - RedWire
+  - Ground
+  - Wall
+  - Win
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
