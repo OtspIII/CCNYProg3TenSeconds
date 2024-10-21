@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: Target
   moveSpeed: 30
-  upTime: 1
+  upTime: 2
 --- !u!61 &-3194243258845283716
 BoxCollider2D:
   m_ObjectHideFlags: 0
