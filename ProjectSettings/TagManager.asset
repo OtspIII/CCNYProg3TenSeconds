@@ -5,15 +5,27 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hazard
+  - Life
+  - Enemy
+  - Target
+  - HitObject
+  - DuckObject
+  - SpinObject
+  - BlueWire
+  - YellowWire
+  - RedWire
+  - Ground
+  - Wall
+  - Win
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
-  - 
+  - Target
+  - Post Processing
   - 
   - 
   - 
