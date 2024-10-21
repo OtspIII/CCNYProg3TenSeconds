@@ -10,6 +10,8 @@ public class joshua_DuckBoxDetect : MonoBehaviour
 
     private joshua_GameManager gameManager;
 
+    public AudioSource duckSound;
+
 
     void Start()
     {
@@ -35,6 +37,7 @@ public class joshua_DuckBoxDetect : MonoBehaviour
 
     IEnumerator Dodge(Transform objectTransform)
     {
+        duckSound.Play();
         float startXPosition = objectTransform.position.x; 
 
         while (true)

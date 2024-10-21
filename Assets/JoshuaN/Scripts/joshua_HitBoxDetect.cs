@@ -11,6 +11,8 @@ public class joshua_HitBoxDetect : MonoBehaviour
 
     private joshua_GameManager gameManager;
 
+    public AudioSource hitSound;
+
     void Start()
     {
         gameManager = FindObjectOfType<joshua_GameManager>();
@@ -35,6 +37,7 @@ public class joshua_HitBoxDetect : MonoBehaviour
 
     IEnumerator HitUp(Transform objectTransform)
     {
+        hitSound.Play();
         float startYPosition = objectTransform.position.y; 
 
         while (true)

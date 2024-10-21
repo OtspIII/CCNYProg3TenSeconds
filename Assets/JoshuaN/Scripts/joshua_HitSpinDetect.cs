@@ -10,6 +10,8 @@ public class joshua_HitSpinDetect : MonoBehaviour
 
     private joshua_GameManager gameManager;
 
+    public AudioSource spinSound;
+
 
     void Start()
     {
@@ -35,6 +37,7 @@ public class joshua_HitSpinDetect : MonoBehaviour
 
     IEnumerator Spin(Transform objectTransform)
     {
+        spinSound.Play();
         float startXPosition = objectTransform.position.x; 
 
         while (true)
