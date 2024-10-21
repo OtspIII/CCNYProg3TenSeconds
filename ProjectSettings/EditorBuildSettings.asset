@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Michael R/WIN.unity
     guid: 4ab70f14e34c20d48977b0d5e178281d
+  - enabled: 1
+    path: Assets/Wilfreddy/Scences/Wilfreddy.unity
+    guid: bfe88182903d3094bbb44b1a77dd8ccb
   m_configObjects: {}
