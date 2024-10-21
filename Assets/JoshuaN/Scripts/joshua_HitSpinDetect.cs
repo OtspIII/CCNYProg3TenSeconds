@@ -29,7 +29,7 @@ public class joshua_HitSpinDetect : MonoBehaviour
                 objectTrackerScript.enabled = false; 
             }
 
-            gameManager.UpdateCombo(1);
+            gameManager?.UpdateCombo(1);
 
             StartCoroutine(Spin(other.transform));
         }
@@ -38,10 +38,14 @@ public class joshua_HitSpinDetect : MonoBehaviour
     IEnumerator Spin(Transform objectTransform)
     {
         spinSound.Play();
+        if (objectTransform == null) yield break; 
+
         float startXPosition = objectTransform.position.x; 
 
-        while (true)
+        while (objectTransform != null)
         {
+            if (objectTransform == null) yield break;
+
             objectTransform.position += new Vector3(moveSpeed * Time.deltaTime, 0, 0);
 
             if (objectTransform.position.x >= startXPosition + moveDistance)

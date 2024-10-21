@@ -29,7 +29,7 @@ public class joshua_HitBoxDetect : MonoBehaviour
                 objectTrackerScript.enabled = false; 
             }
 
-            gameManager.UpdateCombo(1);
+            gameManager?.UpdateCombo(1);
             
             StartCoroutine(HitUp(other.transform));
         }
@@ -38,10 +38,14 @@ public class joshua_HitBoxDetect : MonoBehaviour
     IEnumerator HitUp(Transform objectTransform)
     {
         hitSound.Play();
+        if (objectTransform == null) yield break; 
+
         float startYPosition = objectTransform.position.y; 
 
-        while (true)
+        while (objectTransform != null)
         {
+            if (objectTransform == null) yield break;
+            
             objectTransform.position += new Vector3(0, moveSpeed * Time.deltaTime, 0);
 
             if (objectTransform.position.y >= startYPosition + moveDistance)

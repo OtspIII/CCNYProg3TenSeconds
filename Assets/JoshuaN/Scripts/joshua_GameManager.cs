@@ -17,9 +17,15 @@ public class joshua_GameManager : MonoBehaviour
     public TextMeshProUGUI failText; 
     public TextMeshProUGUI passText; 
     public TextMeshProUGUI timerText;
+    public Canvas screen;
 
     private float countdownTime = 10f;
     private bool timerActive = true;
+
+    public SpriteRenderer Fader;
+    public GameObject spawner;
+    public GameObject window;
+
 
     void Start()
     {
@@ -116,14 +122,32 @@ public class joshua_GameManager : MonoBehaviour
         }
     }
 
+     private void DestroyObjectsByTag(string tag)
+    {
+        GameObject[] objectsToDestroy = GameObject.FindGameObjectsWithTag(tag);
+        foreach (GameObject obj in objectsToDestroy)
+        {
+            Destroy(obj);
+        }
+    }
+
 
     private IEnumerator PauseGame(float pauseDuration)
-    {
+    {       
+        window.gameObject.SetActive(false);
+        spawner.gameObject.SetActive(false);
+        DestroyObjectsByTag("HitObject");
+        DestroyObjectsByTag("SpinObject");
+        DestroyObjectsByTag("DuckObject");
+
         Time.timeScale = 0; 
         yield return new WaitForSecondsRealtime(pauseDuration); 
         Time.timeScale = 1; 
+        screen.gameObject.SetActive(false);
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        yield return StartCoroutine(GameMaster.Fade(Fader, true, 0.5f));
+        GameMaster.NextStage();
     }
 }
 
