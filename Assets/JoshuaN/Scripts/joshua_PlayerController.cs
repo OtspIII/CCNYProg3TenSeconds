@@ -12,8 +12,15 @@ public class joshua_PlayerController : MonoBehaviour
     public GameObject spinBox;
     public float hitBoxDuration;
 
+
+    private bool isActionInProgress = false;
+
     void Update()
     {
+
+        if (isActionInProgress) return;
+
+
         if (Input.GetMouseButtonDown(0)) 
         {
            animator.SetTrigger("Hit");
@@ -37,22 +44,31 @@ public class joshua_PlayerController : MonoBehaviour
 
     IEnumerator ToggleObjectHitBox()
     {
+        isActionInProgress = true;
         hitBox.SetActive(true); 
         yield return new WaitForSeconds(hitBoxDuration); 
         hitBox.SetActive(false); 
+        isActionInProgress = false;
+
     }
 
     IEnumerator ToggleObjectDuckBox()
     {
+        isActionInProgress = true;
         duckBox.SetActive(true); 
         yield return new WaitForSeconds(hitBoxDuration); 
         duckBox.SetActive(false); 
+        isActionInProgress = false;
+
     }
 
     IEnumerator ToggleObjectSpinBox()
     {
+        isActionInProgress = true;
         spinBox.SetActive(true); 
         yield return new WaitForSeconds(hitBoxDuration); 
         spinBox.SetActive(false); 
+        isActionInProgress = false;
     }
+
 }
