@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hazard
+  - Life
+  - Enemy
+  - Target
+  - HitObject
+  - DuckObject
+  - SpinObject
   - BlueWire
   - YellowWire
   - RedWire
@@ -18,8 +24,8 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
-  - 
+  - Target
+  - Post Processing
   - 
   - 
   - 
