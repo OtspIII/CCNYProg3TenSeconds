@@ -147,9 +147,9 @@ public class joshua_GameManager : MonoBehaviour
 
 
         yield return StartCoroutine(GameMaster.Fade(Fader, true, 0.5f));
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); //testing
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name); //testing
 
-        //GameMaster.NextStage();
+        GameMaster.NextStage();
     }
 }
 
