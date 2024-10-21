@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Michael R/Level 1.unity
     guid: b8f941d10c4093749be3167977de64e0
+  - enabled: 1
+    path: Assets/Michael R/WIN.unity
+    guid: 4ab70f14e34c20d48977b0d5e178281d
   m_configObjects: {}

@@ -10,6 +10,7 @@ TagManager:
   - RedWire
   - Ground
   - Wall
+  - Win
   layers:
   - Default
   - TransparentFX

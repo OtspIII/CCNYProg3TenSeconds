@@ -20,6 +20,7 @@ public class Timer : MonoBehaviour
         else if (remainingTime < 0)
         {
             remainingTime = 0;
+            SceneManager.LoadScene("Level 1");
         }
         remainingTime -= Time.deltaTime;
         int minutes = Mathf.FloorToInt(remainingTime / 10);
