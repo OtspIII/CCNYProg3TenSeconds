@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Misha/Title.unity
     guid: 6fb4db1f89992de45bd867a018bb7c68
   - enabled: 1
+    path: Assets/KevinRaghunandan/Scenes/Click.unity
+    guid: 7ae27e5a5ceaa244887ee3eb880cd3fb
+  - enabled: 1
+    path: Assets/KevinRaghunandan/Scenes/Evade.unity
+    guid: 35c57ccca8dddff42b19476391862743
+  - enabled: 1
     path: Assets/Neo/misSPELLed_Neo.unity
     guid: a414b6253cdc0cb4b8db405816df8c16
   - enabled: 1
