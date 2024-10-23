@@ -22,6 +22,13 @@ public class cool_text_Neo : MonoBehaviour
     int word;
     int stage;
 
+    float timer = 0;
+    bool flip;
+    public GameObject logo;
+
+    Color black = new Color(0, 0, 0);
+    Color gray = new Color(0.8f, 0.8f, 0.8f);
+
     private void Start()
     {
         words.Add("additoinal");
@@ -32,7 +39,9 @@ public class cool_text_Neo : MonoBehaviour
         words.Add("diselled");
         words.Add("necromancey");
         Roll();
-        
+        StartCoroutine(FlashingLights());
+        StartCoroutine(FlashingLetter());
+
     }
     void Roll()
     {
@@ -245,7 +254,7 @@ public class cool_text_Neo : MonoBehaviour
     {
         if (Input.inputString != "")
         {
-            if (prompt[o].text == Input.inputString)
+            if (prompt[o].text == Input.inputString.ToString().ToLower())
             {
                 if (WIN.active == false)
                 {
@@ -287,13 +296,55 @@ public class cool_text_Neo : MonoBehaviour
                 Roll();
                 for (int i = 0; i < prompt.Length; i++)
                 {
-                    prompt[i].color = new Color(0, 0, 0);
+                    prompt[i].color = black;
                 }
             //}
             //else
             //{
                 WIN.SetActive(true);
             //}
+        }
+    }
+    public IEnumerator FlashingLights()
+    {
+        while (true)
+        {
+
+            timer += Time.deltaTime*5;
+            if (!flip)
+                logo.transform.localScale = new Vector2(Mathf.Lerp(0.6f, 0.72f, timer), Mathf.Lerp(0.6f, 0.72f, timer));
+            
+            if (flip)
+                logo.transform.localScale = new Vector2(Mathf.Lerp(0.72f, 0.6f, timer), Mathf.Lerp(0.72f, 0.6f, timer));
+
+            if (logo.transform.localScale.x > 0.71f && flip == false)
+            {
+                flip = true;
+                timer = 0;
+            }
+
+            if (logo.transform.localScale.x < 0.61f && flip == true)
+            {
+                flip = false;
+                timer = 0;
+            }
+            yield return null;
+        }
+    }
+    public IEnumerator FlashingLetter()
+    {
+        while (o == 0)
+        {
+            if (prompt[0].color == black)
+            {
+                prompt[0].color = gray;
+                yield return new WaitForSeconds(0.25f);
+            }
+            if (prompt[0].color == gray)
+            {
+                prompt[0].color = black;
+                yield return new WaitForSeconds(0.25f);
+            }
         }
     }
 }
