@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Misha/GameOver.unity
     guid: 32c8982a2d2b07d40868dd888887cc43
+  - enabled: 1
+    path: Assets/Rey/Scenes/FnerfMainScene.unity
+    guid: 83059324210ada64aaeb728040035c4b
+  - enabled: 1
+    path: Assets/Rey/Scenes/GameOverFnaf.unity
+    guid: 0efb543a79c23ec4180cfed81945e35b
   m_configObjects: {}
