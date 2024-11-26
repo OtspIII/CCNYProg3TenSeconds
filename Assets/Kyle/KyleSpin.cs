@@ -52,5 +52,8 @@ public class KyleSpin : MonoBehaviour
             spinDegree += perSpinDegree;
             currentWASD = 'W';
         }
+
+        if (((7200 - spinDegree) / 360) < 0)
+            GameMaster.NextStage();
     }
 }
